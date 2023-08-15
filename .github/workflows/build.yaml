@@ -24,10 +24,10 @@ jobs:
         run: git submodule update --init --recursive
       - name: Build
         run: |
-          cd buildroot && git checkout --track origin/JH7110_VisionFive2_devel && cd ..
-          cd u-boot && git checkout --track origin/JH7110_VisionFive2_devel && cd ..
-          cd linux && git checkout --track origin/JH7110_VisionFive2_devel && cd ..
-          cd opensbi && git checkout master && cd ..
-          cd soft_3rdpart && git checkout JH7110_VisionFive2_devel && cd ..
+          # cd buildroot && git checkout --track origin/JH7110_VisionFive2_devel && cd ..
+          # cd u-boot && git checkout --track origin/JH7110_VisionFive2_devel && cd ..
+          # cd linux && git checkout --track origin/JH7110_VisionFive2_devel && cd ..
+          # cd opensbi && git checkout master && cd ..
+          # cd soft_3rdpart && git checkout JH7110_VisionFive2_devel && cd ..
 
           make -j$(nproc)
