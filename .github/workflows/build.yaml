@@ -30,4 +30,4 @@ jobs:
           # cd opensbi && git checkout master && cd ..
           # cd soft_3rdpart && git checkout JH7110_VisionFive2_devel && cd ..
 
-          make -j$(nproc)
+          make -j$(nproc) work/opensbi/platform/generic/firmware/fw_payload.bin
